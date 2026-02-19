@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  background-color: #101010;
+  color: #fff;
+  height: 96px;
+  border-bottom: 1px solid #2c2c2c;
+  display: flex;
+  align-items: center;
+}
+header div.header_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+header ul.desktop_navigation {
+  display: none;
+  list-style: none;
+  gap: 34px;
+}
+
+header ul.desktop_navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header ul.mobile_navigation {
+  display: none;
+  position: absolute;
+  top: 18px;
+  background-color: #fafafa;
+  list-style: none;
+}
+
+header ul.mobile_navigation:hover {
+  display: block;
+}
+
+header ul.mobile_navigation a {
+  text-decoration: none;
+  color: #101010;
+}
+
+header svg.burger_svg:hover ~ ul.mobile_navigation {
+  display: block;
+}
+
+main div.earphones {
+  color: #fff;
+  background-color: #000;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main div.earphones h2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main section.first {
+  margin: 64px 24px 120px 24px;
+}
+main section.first div.wireless {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main section.first div.wireless div.wirelessimg img {
+  width: 327px;
+  height: 352px;
+}
+main section.first div.wireless div.wirelesstext {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main section.first div.wireless div.wirelesstext span {
+  color: #d87d4a;
+  letter-spacing: 10px;
+  font-weight: 400;
+  margin-top: 32px;
+}
+main section.first div.wireless div.wirelesstext h3 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 28px;
+  margin: 24px 0;
+}
+main section.first div.wireless div.wirelesstext p {
+  color: #7d7d7d;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+main section.first div.wireless div.wirelesstext button {
+  margin: 24px 0 80px 0;
+  width: 160px;
+  height: 48px;
+  background-color: #d87d4a;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: none;
+}
+main section.second {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 24px;
+}
+main section.third {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px 24px 0 24px;
+}
+main section.third div.bestaudioimg img {
+  margin-bottom: 40px;
+}
+main section.third div.bestaudiotext h4 {
+  font-weight: 700;
+  font-size: 28px;
+}
+main section.third div.bestaudiotext h4 b {
+  color: #d87d4a;
+}
+main section.third div.bestaudiotext p {
+  color: #7d7d7d;
+  font-weight: 500;
+  font-size: 15;
+  line-height: 25px;
+  margin: 32px 0 68px 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 150px;
+  flex-direction: column;
+}
+footer h5 {
+  font-size: 30px;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li a {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) and (max-width: 2560px) {
+  main section.first {
+    display: flex;
+    justify-content: center;
+  }
+  main section.first div.wireless {
+    display: flex;
+    flex-direction: row;
+  }
+  main section.first div.wirelesstext p {
+    width: 445px;
+  }
+  main section.second {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+  main section.third {
+    justify-content: center;
+    display: flex;
+    padding-top: 160px;
+  }
+  main section.third div.bestaudio {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main section.third div.bestaudio div.bestaudioimg {
+    height: 588px;
+    width: 540px;
+  }
+  main section.third div.bestaudio div.bestaudiotext p {
+    width: 445px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer nav ul {
+    display: flex;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
